@@ -131,7 +131,7 @@ fi
 cd ~
 rm -rf /usr/local/bin/fucucoin*
 wget https://github.com/BigRock88/fucucoin/releases/download/v1.0.0/fucucoin-v1.0.1.tar.gz
-tar -xzvf fucucoin-v1.0.1-linux.tar.gz
+tar -xzvf fucucoin-v1.0.1.tar.gz
 sudo chmod -R 755 fucucoin-cli
 sudo chmod -R 755 fucucoind
 cp -p -r fucucoind /usr/local/bin
