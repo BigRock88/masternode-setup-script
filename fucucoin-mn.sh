@@ -15,8 +15,8 @@ YELLOW='\033[1;33m'
 NC='\033[0m' # No Color
 
 #TCP port
-PORT=19660
-RPC=19330
+PORT=20008
+RPC=28888
 
 #Clear keyboard input buffer
 function clear_stdin { while read -r -t 0; do read -r; done; }
@@ -131,7 +131,7 @@ fi
 cd ~
 rm -rf /usr/local/bin/fucucoin*
 wget https://github.com/BigRock88/fucucoin/releases/download/v1.0.0/fucucoin-v1.0.1.tar.gz
-tar -xzvf fucucoin-1.0.1-linux.tar.gz
+tar -xzvf fucucoin-v1.0.1-linux.tar.gz
 sudo chmod -R 755 fucucoin-cli
 sudo chmod -R 755 fucucoind
 cp -p -r fucucoind /usr/local/bin
@@ -179,7 +179,7 @@ done
     fucucoin-cli stop
     sleep 5
 cd ~/.fucucoin && rm -rf blocks chainstate sporks zerocoin
-cd ~/.fucucoin && wget https://github.com/BigRock88/fucucoin/releases/download/v1.0.0/fucucoin-v1.0.1.tar.gz
+cd ~/.fucucoin && wget https://github.com/BigRock88/fucucoin/releases/download/v1.0.0/bootstrap.zip
 cd ~/.fucucoin && unzip bootstrap.zip
 sudo rm -rf ~/.fucucoin/bootstrap.zip
 
