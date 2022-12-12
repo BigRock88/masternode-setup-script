@@ -47,7 +47,7 @@ function stop_daemon {
 genkey=$1
 clear
 
-echo -e "${GREEN} ------- Fucucoin MASTERNODE INSTALLER V1.0.0--------+
+echo -e "${GREEN} ------- Fucucoin MASTERNODE INSTALLER V1.0.1--------+
  |                                                  |
  |                                                  |::
  |       The installation will install and run      |::
@@ -130,7 +130,7 @@ fi
 #Installing Daemon
 cd ~
 rm -rf /usr/local/bin/fucucoin*
-wget https://github.com/BigRock88/fucucoin/releases/download/v1.0.0/fucucoin-v1.0.1.tar.gz
+wget https://github.com/BigRock88/fucucoin/releases/download/v1.0.1/fucucoin-v1.0.1.tar.gz
 tar -xzvf fucucoin-v1.0.1.tar.gz
 sudo chmod -R 755 fucucoin-cli
 sudo chmod -R 755 fucucoind
