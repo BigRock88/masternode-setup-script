@@ -32,8 +32,8 @@ stop_daemon
 rm -rf /usr/local/bin/fucucoin*
 mkdir FUCUCOIN_1.0.1
 cd FUCUCOIN_1.0.1
-wget https://github.com/BigRock88/fucucoin/releases/download/1.0.1/fucucoin-1.0.1-linux.tar.gz
-tar -xzvf fucucoin-1.0.1-linux.tar.gz
+wget https://github.com/BigRock88/fucucoin/releases/download/v1.0.1/fucucoin-1.0.1-linux.tar.xz
+tar -xvf fucucoin-1.0.1-linux.tar.xz
 mv fucucoind /usr/local/bin/fucucoind
 mv fucucoin-cli /usr/local/bin/fucucoin-cli
 chmod +x /usr/local/bin/fucucoin*
@@ -42,7 +42,7 @@ rm -rf ~/.fucucoin/chainstate
 rm -rf ~/.fucucoin/sporks
 rm -rf ~/.fucucoin/peers.dat
 cd ~/.fucucoin/
-wget https://github.com/BigRock88/fucucoin/releases/download/1.0.1/bootstrap.zip
+wget https://github.com/BigRock88/fucucoin/releases/download/v1.0.1/bootstrap.zip
 unzip bootstrap.zip
 
 cd ..
