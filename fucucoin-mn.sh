@@ -130,7 +130,7 @@ fi
 #Installing Daemon
 cd ~
 rm -rf /usr/local/bin/fucucoin*
-wget https://github.com/BigRock88/fucucoin/releases/download/v1.0.0/fucucoin-1.0.1-linux.tar.xz
+wget https://github.com/BigRock88/fucucoin/releases/download/v1.0.1/fucucoin-1.0.1-linux.tar.xz
 tar -xvf fucucoin-1.0.1-linux.tar.xz
 sudo chmod -R 755 fucucoin-cli
 sudo chmod -R 755 fucucoind
@@ -179,7 +179,7 @@ done
     fucucoin-cli stop
     sleep 5
 cd ~/.fucucoin && rm -rf blocks chainstate sporks zerocoin
-cd ~/.fucucoin && wget https://github.com/BigRock88/fucucoin/releases/download/v1.0.0/bootstrap.zip
+cd ~/.fucucoin && wget https://github.com/BigRock88/fucucoin/releases/download/v1.0.1/bootstrap.zip
 cd ~/.fucucoin && unzip bootstrap.zip
 sudo rm -rf ~/.fucucoin/bootstrap.zip
 
